@@ -14,87 +14,73 @@ O dispositivo é ideal para monitoramento, segurança residencial ou assistênci
 ✨ Funcionalidades
 🔘 Botão 1 – WhatsApp
 
-Envia mensagem usando CallMeBot API
+- Envia mensagem usando CallMeBot API
 
-Acende LED específico
+- Acende LED específico
 
-Executa um padrão sonoro
+- Executa um padrão sonoro
 
-Possui tempo de espera (cooldown) para evitar spam
+- Possui tempo de espera (cooldown) para evitar spam
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
 🔘 Botão 2 – Telegram
 
-Envia alerta via Telegram Bot API
+- Envia alerta via Telegram Bot API
 
-LED próprio
+- LED próprio
 
-Buzzer com som diferente
+- Buzzer com som diferente
 
-Cooldown automático
+- Cooldown automático
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
 🔘 Botão 3 – Alerta Local
 
-Acende LED dedicado
+- Acende LED dedicado
 
-Ativa o buzzer local 3 vezes
+- Ativa o buzzer local 3 vezes
 
-Não envia nada pela internet
+- Não envia nada pela internet
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
 🛠️ Componentes Utilizados
 
-ESP32 DevKit
-
-3 Botões
-
-3 LEDs
-
-Resistores 220Ω
-
-Buzzer ativo ou passivo
-
-Jumpers + protoboard
+- ESP32 DevKit
+- 3 Botões
+- 3 LEDs
+- Resistores 220Ω
+- Buzzer ativo ou passivo
+- Jumpers + protoboard
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
-🔌 Mapeamento dos Pinos
-Função	Pino
-Botão WhatsApp	22
-Botão Telegram	4
-Botão Local	5
-LED WhatsApp	19
-LED Telegram	18
-LED Local	21
-Buzzer	23
+###🔌 Mapeamento dos Pinos
+- Função	Pino
+- Botão WhatsApp	22
+- Botão Telegram	4
+- Botão Local	5
+- LED WhatsApp	19
+- LED Telegram	18
+- LED Local	21
+- Buzzer	23
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
 📡 Como o Sistema Funciona
 
-Usa debounce por software para evitar falsos acionamentos
-
-Conecta ao Wi-Fi
-
-Envia mensagens via:
-
-HTTPS para Telegram (com certificado SSL carregado no ESP32)
-
-API CallMeBot para WhatsApp
-
-Cada botão tem:
-
-LED próprio
-
-Som exclusivo
-
-Função isolada
-
-Cooldown entre acionamentos evita mensagens repetidas
+- Usa debounce por software para evitar falsos acionamentos
+- Conecta ao Wi-Fi
+- Envia mensagens via:
+- HTTPS para Telegram (com certificado SSL carregado no ESP32)
+- API CallMeBot para WhatsApp
+- Cada botão tem:
+- LED próprio
+- Som exclusivo
+- Função isolada
+- Cooldown entre acionamentos evita mensagens repetidas
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
@@ -116,17 +102,17 @@ String callmebotApiKey = "SUA_KEY";
 
 ▶️ Como Fazer o Upload
 
-Instale as placas ESP32 na Arduino IDE
+- Instale as placas ESP32 na Arduino IDE
 
-Instale as bibliotecas:
+- Instale as bibliotecas:
 
-UniversalTelegramBot
+Un- iversalTelegramBot
 
-ArduinoJson
+- ArduinoJson
 
-Selecione a porta COM correta
+- Selecione a porta COM correta
 
-Clique em Upload
+- Clique em Upload
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
@@ -134,19 +120,19 @@ Clique em Upload
 
 O firmware contém:
 
-Funções separadas para cada botão
+- Funções separadas para cada botão
 
-Envio HTTP/HTTPS com WiFiClientSecure
+- Envio HTTP/HTTPS com WiFiClientSecure
 
-Função personalizada de URL encoding
+- Função personalizada de URL encoding
 
-Certificado SSL para o Telegram
+- Certificado SSL para o Telegram
 
-Sincronização via NTP
+- Sincronização via NTP
 
-Mensagens de debug detalhadas no Serial Monitor
+- Mensagens de debug detalhadas no Serial Monitor
 
-Estrutura limpa e legível
+- Estrutura limpa e legível
 
 --------------------------------------------------------------//------------------------------------------------------------------------
 
