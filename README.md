@@ -6,7 +6,7 @@
 ![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
-
+--------------------------------------------------------------//------------------------------------------------------------------------
 
 Este projeto implementa um sistema de emergência usando um ESP32, onde três botões físicos executam ações diferentes: enviar alerta pelo WhatsApp, enviar alerta pelo Telegram ou ativar um alerta local.
 O dispositivo é ideal para monitoramento, segurança residencial ou assistência a pessoas com necessidade de botão de pânico.
@@ -22,6 +22,8 @@ Executa um padrão sonoro
 
 Possui tempo de espera (cooldown) para evitar spam
 
+--------------------------------------------------------------//------------------------------------------------------------------------
+
 🔘 Botão 2 – Telegram
 
 Envia alerta via Telegram Bot API
@@ -32,6 +34,8 @@ Buzzer com som diferente
 
 Cooldown automático
 
+--------------------------------------------------------------//------------------------------------------------------------------------
+
 🔘 Botão 3 – Alerta Local
 
 Acende LED dedicado
@@ -39,6 +43,8 @@ Acende LED dedicado
 Ativa o buzzer local 3 vezes
 
 Não envia nada pela internet
+
+--------------------------------------------------------------//------------------------------------------------------------------------
 
 🛠️ Componentes Utilizados
 
@@ -54,6 +60,8 @@ Buzzer ativo ou passivo
 
 Jumpers + protoboard
 
+--------------------------------------------------------------//------------------------------------------------------------------------
+
 🔌 Mapeamento dos Pinos
 Função	Pino
 Botão WhatsApp	22
@@ -63,6 +71,9 @@ LED WhatsApp	19
 LED Telegram	18
 LED Local	21
 Buzzer	23
+
+--------------------------------------------------------------//------------------------------------------------------------------------
+
 📡 Como o Sistema Funciona
 
 Usa debounce por software para evitar falsos acionamentos
@@ -85,6 +96,9 @@ Função isolada
 
 Cooldown entre acionamentos evita mensagens repetidas
 
+--------------------------------------------------------------//------------------------------------------------------------------------
+
+
 ⚙️ Configuração Necessária
 
 Editar no código:
@@ -97,6 +111,8 @@ String callmebotApiKey = "SUA_KEY";
 
 #define BOT_TOKEN "SEU_TOKEN"
 #define CHAT_ID "SEU_CHAT_ID"
+
+--------------------------------------------------------------//------------------------------------------------------------------------
 
 ▶️ Como Fazer o Upload
 
@@ -111,6 +127,8 @@ ArduinoJson
 Selecione a porta COM correta
 
 Clique em Upload
+
+--------------------------------------------------------------//------------------------------------------------------------------------
 
 📑 Sobre o Código
 
@@ -130,6 +148,7 @@ Mensagens de debug detalhadas no Serial Monitor
 
 Estrutura limpa e legível
 
+--------------------------------------------------------------//------------------------------------------------------------------------
 
 Desenvolvido para salvar vidas através da tecnologia
 
