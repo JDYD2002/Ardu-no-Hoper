@@ -98,6 +98,7 @@ Editar no código:
 - #define CHAT_ID "SEU_CHAT_ID"
 
 --------------------------------------------------------//-----------------------------------------------
+
 ▶️ Como Fazer o Upload
 
 - Instale as placas ESP32 na Arduino IDE
@@ -113,6 +114,7 @@ Un- iversalTelegramBot
 - Clique em Upload
 
 --------------------------------------------------------//-----------------------------------------------
+
 📑 Sobre o Código
 
 O firmware contém:
