@@ -1,5 +1,13 @@
 📟 Sistema de Emergência com ESP32 – WhatsApp, Telegram e Alerta Local
 
+<div align="center">
+https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white
+https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white
+https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
+https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white
+
+</div>
+
 Este projeto implementa um sistema de emergência usando um ESP32, onde três botões físicos executam ações diferentes: enviar alerta pelo WhatsApp, enviar alerta pelo Telegram ou ativar um alerta local.
 O dispositivo é ideal para monitoramento, segurança residencial ou assistência a pessoas com necessidade de botão de pânico.
 
@@ -121,3 +129,10 @@ Sincronização via NTP
 Mensagens de debug detalhadas no Serial Monitor
 
 Estrutura limpa e legível
+
+<div align="center">
+Desenvolvido para salvar vidas através da tecnologia
+
+https://img.shields.io/badge/GitHub-Reposit%C3%B3rio-181717?style=for-the-badge&logo=github
+
+</div>
